@@ -1,0 +1,20 @@
+# Ignore virtual environment
+venv/
+.env
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore pytest cache
+pytest_cache/
+.cache/
+
+# Ignore log files
+*.log
+
+# Ignore VS Code and JetBrains IDE settings
+.vscode/
+.idea/
