@@ -13,6 +13,7 @@ def add(nums: str) -> int:
     else:
         nums = re.split("[,\n]", nums)
 
+    # create an array nums_list consisting only the extracted numbers string, and convert the string to int, make sure to ignore the numbers > 1000
     nums_list = [int(n) for n in nums if int(n) <= 1000]
 
     return sum(nums_list)

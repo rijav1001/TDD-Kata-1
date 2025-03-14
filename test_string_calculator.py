@@ -9,3 +9,6 @@ def test_newline_delimiter():
 
 def test_custom_delimiter():
     assert add("//;\n1;2") == 3
+
+def test_ignore_larger_numbers():
+    assert add("2, 1001") == 2
