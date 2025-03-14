@@ -16,4 +16,9 @@ def add(nums: str) -> int:
     # create an array nums_list consisting only the extracted numbers string, and convert the string to int, make sure to ignore the numbers > 1000
     nums_list = [int(n) for n in nums if int(n) <= 1000]
 
+    # check for negative values
+    negatives = [int(n) for n in nums if int(n) < 0]
+    if negatives:
+        raise ValueError(f"negative numbers not allowed: {','.join(map(str, negatives))}")
+
     return sum(nums_list)
