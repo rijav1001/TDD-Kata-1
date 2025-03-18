@@ -1,0 +1,23 @@
+{
+  "name": "tdd-kata-1",
+  "version": "1.0.0",
+  "description": "This is a Test Driven Development assessment where a simple string calculator has been written in Python, and being test for different scenarios using pytest library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rijav1001/TDD-Kata-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rijav1001/TDD-Kata-1/issues"
+  },
+  "homepage": "https://github.com/rijav1001/TDD-Kata-1#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
