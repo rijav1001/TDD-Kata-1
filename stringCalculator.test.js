@@ -33,3 +33,11 @@ test("multiple numbers", () => {
     expect(add("1,2,3")).toBe(6);
     expect(add("4,5,6,7")).toBe(22);
 });
+
+test("ignore larger numbers", () => {
+    expect(add("2,1001")).toBe(2);
+});
+
+test("negative numbers not allowed", () => {
+    expect(() => add("1,-2,3,-3")).toThrow("negative numbers not allowed: -2,-3");
+});
