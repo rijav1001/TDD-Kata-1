@@ -19,3 +19,17 @@ test("multiple delimiters", () => {
 test("multiple delimiters with different lengths", () => {
     expect(add("//[**][%%]\n1**2%%3")).toBe(6);
 });
+
+test("single number", () => {
+    expect(add("1")).toBe(1);
+    expect(add("5")).toBe(5);
+});
+
+test("two numbers", () => {
+    expect(add("1,2")).toBe(3);
+});
+
+test("multiple numbers", () => {
+    expect(add("1,2,3")).toBe(6);
+    expect(add("4,5,6,7")).toBe(22);
+});
