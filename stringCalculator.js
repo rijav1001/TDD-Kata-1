@@ -23,8 +23,14 @@ function add(nums) {
     let regex = new RegExp(delimiters.map(d => d.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"));
     let numList = nums.split(regex).map(Number);
 
-    // return the sum of the numbers (converted from string after extracting delimiters)
-    return numList.reduce((sum, n) => sum + n, 0);
+    // check for negative numbers and throw custom error
+    let negatives = numList.filter(n => n < 0);
+    if (negatives.length) {
+        throw new Error(`negative numbers not allowed: ${negatives.join(",")}`);
+    }
+
+    // return the sum of the numbers after ignoring numbers > 1000 (converted from string after extracting delimiters)
+    return numList.filter(n => n < 1000).reduce((sum, n) => sum + n, 0);
 }
 
 module.exports = add;

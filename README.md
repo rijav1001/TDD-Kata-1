@@ -1,11 +1,13 @@
 # TDD Kata 1
 
-This is a Test Driven Development assessment where a simple string calculator has been written in Python, and being test for different scenarios using pytest library.
+This is a Test Driven Development assessment where a simple string calculator has been written in Node, and being test for different scenarios using jest library.
 
 # Requirements
 
-The only requirement to run the test cases is to install pytest
-Command: pip install pytest or pip3 install pytest, and then pytest -v
+The requirement to run the test cases is to install jest
+Commands:
+npm init -y -> this will create the package.json file, where we have defined the test scripts as jest
+npm install --save-dev jest
 
 # Screenshots 
 
